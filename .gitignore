@@ -1,0 +1,194 @@
+# ============================================================================
+# COMPILED BINARIES & EXECUTABLES
+# ============================================================================
+
+# Main program executable
+clox
+clox.exe
+
+# Test executables
+test_clox
+test_clox.exe
+test
+test.exe
+
+# Any executable without extension (common in Unix)
+*
+!*/
+!*.*
+
+# ============================================================================
+# C/C++ COMPILATION ARTIFACTS
+# ============================================================================
+
+# Object files
+*.o
+*.obj
+*.ko
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Static analysis
+*.gcda
+*.gcno
+
+# Debug info
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# ============================================================================
+# BUILD DIRECTORIES
+# ============================================================================
+
+# Common build directories
+build/
+Build/
+BUILD/
+bin/
+debug/
+release/
+obj/
+out/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile.cmake
+*.cmake
+
+# ============================================================================
+# DEVELOPMENT TOOLS
+# ============================================================================
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Tags files
+tags
+TAGS
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Core dumps
+core
+core.*
+vgcore.*
+
+# Valgrind
+*.memcheck
+*.helgrind
+*.cachegrind
+*.callgrind
+
+# GDB
+.gdb_history
+
+# ============================================================================
+# TESTING & COVERAGE
+# ============================================================================
+
+# Test outputs
+test_output/
+test_results/
+*.test
+*.testlog
+
+# Coverage files
+*.gcov
+coverage/
+htmlcov/
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+
+# Generated docs
+docs/html/
+docs/latex/
+*.pdf
+*.ps
+
+# Doxygen
+Doxyfile.bak
+
+# ============================================================================
+# SYSTEM & OS FILES
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================================================
+# LOGS & TEMPORARY FILES
+# ============================================================================
+
+# Log files
+*.log
+*.out
+*.err
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+
+# If you add a REPL mode that saves history
+.lox_history
+.clox_history
+
+# If you add benchmark outputs
+benchmarks/
+perf.data*
+
+# If you add generated test files
+generated_tests/
+
+# Version or build info files (if auto-generated)
+version.h
+build_info.h
