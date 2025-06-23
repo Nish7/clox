@@ -13,7 +13,6 @@ test
 test.exe
 
 # Any executable without extension (common in Unix)
-*
 !*/
 !*.*
 
