@@ -162,12 +162,16 @@ static void binary() {
   switch (operatorType) {
   case TOKEN_PLUS:
     emitByte(OP_ADD);
+    break;
   case TOKEN_MINUS:
     emitByte(OP_SUBTRACT);
+    break;
   case TOKEN_STAR:
     emitByte(OP_MULTIPLY);
+    break;
   case TOKEN_SLASH:
     emitByte(OP_DIVIDE);
+    break;
   default:
     return;
   }
