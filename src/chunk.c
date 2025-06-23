@@ -13,7 +13,7 @@ void initChunk(Chunk *chunk) {
 }
 
 void writeChunk(Chunk *chunk, uint8_t byte, int line) {
-  if (chunk->capacity < chunk->count + 1) {
+  if (chunk->capacity < chunk->count + 1) { // check if needs to grow
     int oldCapacity = chunk->capacity;
     chunk->capacity = GROW_CAPACITY(oldCapacity);
     chunk->code =
@@ -35,5 +35,5 @@ void freeChunk(Chunk *chunk) {
 
 int addConstant(Chunk *chunk, Value value) {
   writeValueArray(&chunk->constants, value);
-  return chunk->constants.count - 1;
+  return chunk->constants.count - 1; // return where did we add the "value"
 }
