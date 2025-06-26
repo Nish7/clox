@@ -84,7 +84,7 @@ void initScanner(const char *source) {
 }
 
 static Token string() {
-  while (peek() != '"' && isAtEnd()) {
+  while (peek() != '"' && !isAtEnd()) {
     if (peek() == '\n')
       scanner.line++;
     advance();
