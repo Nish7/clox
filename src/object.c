@@ -37,7 +37,6 @@ static uint32_t hashString(const char *key, int length) {
 
 ObjString *copyString(const char *chars, int length) {
   uint32_t hash = hashString(chars, length);
-  printf("chars %.*s and hash %d\n", length, chars, hash);
   ObjString *interned = tableFindString(&vm.strings, chars, length, hash);
   if (interned != NULL)
     return interned;
