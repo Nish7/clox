@@ -1,0 +1,8 @@
+var a = "global a";
+
+{
+  var a = "block a";
+  print a; 
+}
+
+print a; 
