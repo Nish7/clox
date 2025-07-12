@@ -99,6 +99,8 @@ int disassembleInstruction(Chunk *chunk, int offset) {
     return byteInstruction("OP_GET_LOCAL", chunk, offset);
   case OP_SET_LOCAL:
     return byteInstruction("OP_SET_LOCAL", chunk, offset);
+  case OP_CALL:
+    return byteInstruction("OP_CALL", chunk, offset);
   default:
     printf("unknown opcode %d\n", instruction);
     return offset + 1;
