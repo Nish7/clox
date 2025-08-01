@@ -2,6 +2,9 @@
 #define clox_memory_h
 
 #include "common.h"
+#include "value.h"
+
+#define GC_HEAP_GROW_FACTOR 2
 
 #define GROW_CAPACITY(capacity) ((capacity) < 8 ? 8 : (capacity) * 2)
 #define GROW_ARRAY(type, pointer, oldCount, newCount)                          \
@@ -17,5 +20,8 @@
 
 void *reallocate(void *pointer, size_t oldSize, size_t newSize);
 void freeObjects();
+void collectGarbage();
+void markObject(Obj *object);
+void markValue(Value value);
 
 #endif

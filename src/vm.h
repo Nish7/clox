@@ -19,6 +19,11 @@ typedef struct {
   int frameCount;
   Value stack[STACK_MAX];
   Value *stackTop;
+  int grayCount;
+  int grayCapacity;
+  size_t bytesAllocated;
+  size_t nextGC;
+  Obj **grayStack;
   Obj *objects;
   Table strings;
   ObjUpvalue *openUpvalues;

@@ -1,0 +1,10 @@
+fun makeGarbage() {
+  var i = 0;
+  while (i < 5) {
+    var temp = "string " + "1";
+    i = i + 1;
+  }
+}
+
+makeGarbage();
+print "Done.";
